@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ category, id, image, price, title }) => {
+const Product = ({ category, id, image, price, title, addToCart }) => {
   // const { category, id, image, price, title } = props;
   return (
     <div className="col">
@@ -19,11 +19,14 @@ const Card = ({ category, id, image, price, title }) => {
         </div>
         <div className="card-body d-flex justify-content-between">
           <span className="fw-bold">{price}$</span>
-          <i className="fa-solid fa-cart-plus"></i>
+          <i
+            onClick={() => addToCart({ category, id, image, price, title })}
+            className="fa-solid fa-cart-plus"
+          ></i>
         </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default Product;
