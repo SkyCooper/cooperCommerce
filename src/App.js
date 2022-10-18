@@ -3,7 +3,7 @@ import CardContainer from "./components/CardContainer";
 import Product from "./components/Product";
 import Navbar from "./components/Navbar";
 import { data as products } from "./helpers/data";
-import Aside from "./components/Aside/aside";
+import Aside from "./components/Aside/Aside";
 
 function App() {
   const [card, setCard] = useState([]);
