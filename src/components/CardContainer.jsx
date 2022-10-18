@@ -1,11 +1,11 @@
 import React from "react";
 import Product from "./Product";
 
-const CardContainer = ({ card }) => {
+const CardContainer = ({ card, removeCard }) => {
   return (
-    <div>
+    <div className="row">
       {card.map((item) => (
-        <Product key={item.id} {...item} />
+        <Product key={item.id} {...item} removeCard={removeCard} />
       ))}
     </div>
   );

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-cart {
+  padding: 0.8rem 1.5rem 0.8rem 2rem !important;
+}
+.nav-cart::before {
+  content:'\f07a';
+  font: var(--fa-font-solid);
+ margin-right: 5px;
+}
